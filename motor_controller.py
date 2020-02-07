@@ -48,7 +48,7 @@ class drive():
         command = '3' + str(left_direc) + "000000"
         bin_vel = int(bin(int(left_speed)).replace("0b",""))
         command = str(int(command) + bin_vel)
-    	command = command.replace('3','1')
+    	command = command.replace('3','0')
         command = bytearray(command)
         print "Left wheels",command
        # self.my_serial.write(command)
